@@ -59,7 +59,7 @@ async def call_claude(query: str) -> None:
     It only mentions this information about itself if the information is directly pertinent to the human's query.
     """
 
-    msg = cl.Message(content="", author="Tyrion")
+    msg = cl.Message(content="", author="Tyrion Lannister")
 
     stream = await async_client.messages.create(
     model="claude-3-5-sonnet-20240620",
